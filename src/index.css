@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.active{
+  background-color: #014739;
+  padding: 10px ;
+}
+
+.layer{
+  opacity: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.layer:hover{
+  opacity: 0.9;
+}

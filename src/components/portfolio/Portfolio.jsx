@@ -29,7 +29,7 @@ export default function Portfolio() {
         </div>
       </div>
     </section>  
-    {imgSrc && <ImageBox imgSrc = {imgSrc}/>}
+    {imgSrc && <ImageBox imgSrc = {imgSrc} setImgSource={setImgSource}/>}
 
    
     </>

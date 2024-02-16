@@ -6,10 +6,11 @@ import imgSrc3 from '../../assets/images/port3.png'
 import ImageBox from '../imgBox/ImageBox'
 import Card from '../card/Card'
 export default function Portfolio() {
+
+ const [imgSrc, setImgSource] = useState('')  
  let onCardClick = (src)=>{
   setImgSource(src)
  }
- const [imgSrc, setImgSource] = useState('')  
  const imgArray = [imgSrc1, imgSrc2, imgSrc3,imgSrc1, imgSrc2, imgSrc3]
   return (
     <>
@@ -23,7 +24,7 @@ export default function Portfolio() {
       </div>
         <div className="row gy-5">
           {
-            imgArray.map((img)=>{return <Card imgSrc={img} onCardClick={onCardClick}/>})
+            imgArray.map((img,index)=>{return <Card imgSrc={img} onCardClick={onCardClick} key={index}/>})
           }
          
         </div>
